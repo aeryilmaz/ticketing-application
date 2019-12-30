@@ -13,6 +13,8 @@ public class FlightInformationDTO implements Serializable {
 
     private LocalDateTime arrivalTime;
 
+    private String name;
+
     private Integer customerSize;
 
     private RouteDTO route;

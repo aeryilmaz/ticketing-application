@@ -20,6 +20,7 @@ public class FlightInformationMapper implements Mapper<FlightInformation, Flight
         dto.setArrivalTime(entity.getArrivalTime());
         dto.setCustomerSize(entity.getCustomerSize());
         dto.setDepartureTime(entity.getDepartureTime());
+        dto.setName(entity.getName());
         dto.setCompany(companyMapper.toDTO(entity.getCompany()));
         dto.setRoute(routeMapper.toDTO(entity.getRoute()));
         return dto;
@@ -31,6 +32,7 @@ public class FlightInformationMapper implements Mapper<FlightInformation, Flight
         entity.setArrivalTime(dto.getArrivalTime());
         entity.setDepartureTime(dto.getDepartureTime());
         entity.setCustomerSize(entity.getCustomerSize());
+        entity.setName(dto.getName());
         entity.setRoute(routeMapper.toEntity(dto.getRoute()));
         entity.setCompany(companyMapper.toEntity(dto.getCompany()));
         return entity;

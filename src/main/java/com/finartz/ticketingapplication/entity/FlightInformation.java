@@ -18,6 +18,8 @@ public class FlightInformation implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    private String name;
+
     private LocalDateTime departureTime;
 
     private LocalDateTime arrivalTime;
