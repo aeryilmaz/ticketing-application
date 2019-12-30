@@ -1,7 +1,7 @@
 package com.finartz.ticketingapplication.controller;
 
 import com.finartz.ticketingapplication.dto.CompanyDTO;
-import com.finartz.ticketingapplication.service.ICompanyService;
+import com.finartz.ticketingapplication.service.interfaces.ICompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

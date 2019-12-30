@@ -4,6 +4,7 @@ import com.finartz.ticketingapplication.dto.RouteDTO;
 import com.finartz.ticketingapplication.entity.Route;
 import com.finartz.ticketingapplication.mapper.RouteMapper;
 import com.finartz.ticketingapplication.repository.IRouteRepository;
+import com.finartz.ticketingapplication.service.interfaces.IRouteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

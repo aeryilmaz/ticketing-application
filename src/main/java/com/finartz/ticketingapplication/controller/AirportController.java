@@ -1,7 +1,7 @@
 package com.finartz.ticketingapplication.controller;
 
 import com.finartz.ticketingapplication.dto.AirportDTO;
-import com.finartz.ticketingapplication.service.IAirportService;
+import com.finartz.ticketingapplication.service.interfaces.IAirportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

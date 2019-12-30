@@ -4,6 +4,7 @@ import com.finartz.ticketingapplication.dto.CompanyDTO;
 import com.finartz.ticketingapplication.entity.Company;
 import com.finartz.ticketingapplication.mapper.CompanyMapper;
 import com.finartz.ticketingapplication.repository.ICompanyRepository;
+import com.finartz.ticketingapplication.service.interfaces.ICompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class CompanyService implements ICompanyService{
+public class CompanyService implements ICompanyService {
     
     @Autowired
     private CompanyMapper companyMapper;

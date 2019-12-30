@@ -1,4 +1,4 @@
-package com.finartz.ticketingapplication.service;
+package com.finartz.ticketingapplication.service.interfaces;
 
 
 import com.finartz.ticketingapplication.dto.AirportDTO;

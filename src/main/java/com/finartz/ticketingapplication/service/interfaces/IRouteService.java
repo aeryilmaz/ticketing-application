@@ -1,7 +1,6 @@
-package com.finartz.ticketingapplication.service;
+package com.finartz.ticketingapplication.service.interfaces;
 
 import com.finartz.ticketingapplication.dto.RouteDTO;
-import com.finartz.ticketingapplication.entity.Route;
 
 import java.util.List;
 

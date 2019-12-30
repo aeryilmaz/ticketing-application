@@ -4,6 +4,7 @@ import com.finartz.ticketingapplication.dto.AirportDTO;
 import com.finartz.ticketingapplication.entity.Airport;
 import com.finartz.ticketingapplication.mapper.AirportMapper;
 import com.finartz.ticketingapplication.repository.IAirportRepository;
+import com.finartz.ticketingapplication.service.interfaces.IAirportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
