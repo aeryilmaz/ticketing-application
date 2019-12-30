@@ -1,14 +1,14 @@
 package com.finartz.ticketingapplication.repository;
 
-import com.finartz.ticketingapplication.entity.Company;
+import com.finartz.ticketingapplication.entity.Route;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface ICompanyRepository extends JpaRepository<Company,Long> {
+public interface IRouteRepository extends JpaRepository<Route,Long> {
 
-    List<Company> findByNameContaining(String name);
+    List<Route> findByNameContaining(String name);
 
 }
