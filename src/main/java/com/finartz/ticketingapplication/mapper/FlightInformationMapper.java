@@ -3,7 +3,9 @@ package com.finartz.ticketingapplication.mapper;
 import com.finartz.ticketingapplication.dto.FlightInformationDTO;
 import com.finartz.ticketingapplication.entity.FlightInformation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FlightInformationMapper implements Mapper<FlightInformation, FlightInformationDTO> {
 
     @Autowired

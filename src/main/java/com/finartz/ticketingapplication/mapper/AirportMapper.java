@@ -2,7 +2,9 @@ package com.finartz.ticketingapplication.mapper;
 
 import com.finartz.ticketingapplication.dto.AirportDTO;
 import com.finartz.ticketingapplication.entity.Airport;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AirportMapper implements Mapper<Airport, AirportDTO> {
 
     @Override
