@@ -17,11 +17,12 @@ public class Airport implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column(unique = true)
     private String name;
 
     private String country;
 
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.ALL})
     private Location location;
 
 
