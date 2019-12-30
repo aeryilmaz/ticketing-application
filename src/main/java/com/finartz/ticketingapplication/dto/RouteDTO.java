@@ -9,6 +9,7 @@ import java.io.Serializable;
 @Data
 public class RouteDTO implements Serializable {
 
+    private String name;
     private AirportDTO departure;
     private AirportDTO arrival;
 

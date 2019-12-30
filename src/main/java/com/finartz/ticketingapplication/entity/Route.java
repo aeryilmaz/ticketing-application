@@ -17,6 +17,8 @@ public class Route implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    private String name;
+
     @OneToOne(fetch = FetchType.LAZY)
     private Airport departure;
 
