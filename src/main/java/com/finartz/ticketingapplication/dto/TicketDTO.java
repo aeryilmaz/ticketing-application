@@ -6,7 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class TicketDTO implements Serializable {
+public class TicketDTO extends AbstractDTO {
 
     private String customerName;
 

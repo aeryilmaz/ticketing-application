@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-public class FlightInformationDTO implements Serializable {
+public class FlightInformationDTO extends AbstractDTO {
 
     private LocalDateTime departureTime;
 

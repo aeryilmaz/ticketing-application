@@ -7,7 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class CompanyDTO implements Serializable {
+public class CompanyDTO extends AbstractDTO {
 
     private String name;
 
