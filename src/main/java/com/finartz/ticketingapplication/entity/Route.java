@@ -19,9 +19,9 @@ public class Route implements Serializable {
 
     private String name;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(cascade = {CascadeType.ALL})
     private Airport departure;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(cascade = {CascadeType.ALL})
     private Airport arrival;
 }

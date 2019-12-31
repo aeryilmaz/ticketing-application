@@ -26,10 +26,10 @@ public class FlightInformation implements Serializable {
 
     private Integer customerSize;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(cascade = {CascadeType.ALL})
     private Route route;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(cascade = {CascadeType.ALL})
     private Company company;
 
 

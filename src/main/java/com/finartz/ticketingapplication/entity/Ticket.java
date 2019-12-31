@@ -23,7 +23,7 @@ public class Ticket implements Serializable {
     @Column(unique = true)
     private String seatNumber;
 
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.ALL})
     private FlightInformation flightInformation;
 
 }
