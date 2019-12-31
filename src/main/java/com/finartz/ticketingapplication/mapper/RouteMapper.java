@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RouteMapper implements Mapper<Route, RouteDTO> {
+public class RouteMapper extends AbstractGenericMapper<Route, RouteDTO> {
 
     @Autowired
     private AirportMapper airportMapper;

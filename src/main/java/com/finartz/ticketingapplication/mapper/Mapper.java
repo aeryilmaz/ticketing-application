@@ -1,8 +1,10 @@
 package com.finartz.ticketingapplication.mapper;
 
-import java.io.Serializable;
+import com.finartz.ticketingapplication.dto.GenericDTO;
+import com.finartz.ticketingapplication.entity.GenericEntity;
 
-public interface Mapper<E extends Serializable,D extends Serializable> {
+
+public interface Mapper<E extends GenericEntity, D extends GenericDTO> {
 
     D toDTO(E entity);
     E toEntity(D dto);

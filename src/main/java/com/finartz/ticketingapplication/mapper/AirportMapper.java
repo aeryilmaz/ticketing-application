@@ -5,7 +5,7 @@ import com.finartz.ticketingapplication.entity.Airport;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AirportMapper implements Mapper<Airport, AirportDTO> {
+public class AirportMapper extends AbstractGenericMapper<Airport,AirportDTO> {
 
     @Override
     public AirportDTO toDTO(Airport entity) {

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TicketMapper implements Mapper<Ticket, TicketDTO> {
+public class TicketMapper extends AbstractGenericMapper<Ticket, TicketDTO> {
 
     @Autowired
     private FlightInformationMapper flightInformationMapper;
@@ -14,7 +14,6 @@ public class TicketMapper implements Mapper<Ticket, TicketDTO> {
     @Override
     public TicketDTO toDTO(Ticket entity) {
         TicketDTO dto = new TicketDTO();
-        dto.setCustomerName(entity.getCustomerName());
         dto.setSeatNumber(entity.getSeatNumber());
         dto.setFlightInformation(flightInformationMapper.toDTO(entity.getFlightInformation()));
         return dto;
@@ -23,7 +22,6 @@ public class TicketMapper implements Mapper<Ticket, TicketDTO> {
     @Override
     public Ticket toEntity(TicketDTO dto) {
         Ticket entity = new Ticket();
-        entity.setCustomerName(dto.getCustomerName());
         entity.setSeatNumber(dto.getSeatNumber());
         entity.setFlightInformation(flightInformationMapper.toEntity(dto.getFlightInformation()));
         return entity;

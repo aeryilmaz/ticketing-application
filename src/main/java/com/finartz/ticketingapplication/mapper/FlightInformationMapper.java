@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FlightInformationMapper implements Mapper<FlightInformation, FlightInformationDTO> {
+public class FlightInformationMapper extends AbstractGenericMapper<FlightInformation, FlightInformationDTO> {
 
     @Autowired
     private RouteMapper routeMapper;

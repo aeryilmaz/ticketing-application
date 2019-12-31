@@ -5,7 +5,7 @@ import com.finartz.ticketingapplication.entity.Company;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CompanyMapper implements Mapper<Company, CompanyDTO> {
+public class CompanyMapper extends AbstractGenericMapper<Company, CompanyDTO> {
     @Override
     public CompanyDTO toDTO(Company entity) {
         CompanyDTO dto = new CompanyDTO();
