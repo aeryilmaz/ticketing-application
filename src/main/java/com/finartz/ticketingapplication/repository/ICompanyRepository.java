@@ -7,8 +7,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ICompanyRepository extends JpaRepository<Company,Long> {
+public interface ICompanyRepository extends IGenericRepository<Company> {
 
     List<Company> findByNameContaining(String name);
+    Company findByName(String name);
 
 }

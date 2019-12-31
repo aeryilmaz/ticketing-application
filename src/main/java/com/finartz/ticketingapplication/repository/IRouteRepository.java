@@ -7,8 +7,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface IRouteRepository extends JpaRepository<Route,Long> {
+public interface IRouteRepository extends IGenericRepository<Route> {
 
     List<Route> findByNameContaining(String name);
+    Route findByName(String name);
 
 }

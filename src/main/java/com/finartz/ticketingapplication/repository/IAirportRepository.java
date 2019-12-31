@@ -5,8 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface IAirportRepository extends JpaRepository<Airport,Long> {
+public interface IAirportRepository extends IGenericRepository<Airport> {
 
     List<Airport> findByNameContaining(String name);
+    Airport findByName(String name);
 
 }
