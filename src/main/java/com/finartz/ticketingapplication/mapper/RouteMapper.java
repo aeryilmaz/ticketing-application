@@ -23,7 +23,7 @@ public class RouteMapper implements Mapper<Route, RouteDTO> {
     @Override
     public Route toEntity(RouteDTO dto) {
         Route entity = new Route();
-        entity.setName(entity.getName());
+        entity.setName(dto.getName());
         entity.setArrival(airportMapper.toEntity(dto.getArrival()));
         entity.setDeparture(airportMapper.toEntity(dto.getDeparture()));
         return entity;
