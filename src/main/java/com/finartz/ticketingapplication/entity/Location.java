@@ -12,13 +12,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Location implements Serializable {
+public class Location extends AbstractEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    private String name;
 
     private String latitude;
 

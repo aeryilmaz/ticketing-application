@@ -11,13 +11,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Company implements Serializable {
+public class Company extends AbstractEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    @Column(unique = true)
     private String name;
 
     private String country;

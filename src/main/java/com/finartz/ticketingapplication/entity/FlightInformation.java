@@ -12,13 +12,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Setter
 @Getter
-public class FlightInformation implements Serializable {
+public class FlightInformation extends AbstractEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    private String name;
 
     private LocalDateTime departureTime;
 

@@ -11,14 +11,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Airport implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    @Column(unique = true)
-    private String name;
+public class Airport extends AbstractEntity {
 
     private String country;
 

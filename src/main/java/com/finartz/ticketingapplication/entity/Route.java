@@ -11,13 +11,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Route implements Serializable {
+public class Route extends AbstractEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
 
-    private String name;
 
     @OneToOne(cascade = {CascadeType.ALL})
     private Airport departure;
